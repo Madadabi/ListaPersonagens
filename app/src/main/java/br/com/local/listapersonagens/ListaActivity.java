@@ -17,13 +17,13 @@ public class ListaActivity extends AppCompatActivity {
     ListView listView;
 
     String nomePersonagens[] = {
-            "Luffy",
-            "Zoro",
-            "Sanji",
+            "Monkey D. Luffy",
+            "Roronoa Zoro",
+            "Vinsmoke Sanji",
             "Nami",
             "Usopp",
-            "Chopper",
-            "Robin",
+            "Tony Tony Chopper",
+            "Nico Robin",
             "Franky",
             "Brook"
     };
@@ -37,6 +37,17 @@ public class ListaActivity extends AppCompatActivity {
             R.drawable.robin,
             R.drawable.franky,
             R.drawable.brook
+    };
+    String descPersonagens[] = {
+            "Capitão da tripulação dos Chapéus de Palha",
+            "Braço direito de Luffy, leal espadachim",
+            "Cozinheiro da tripulação dos Chapéus de Palha",
+            "Navegadora dos Chapéus de Palha",
+            "Franco-atirador da tripulação dos Chapéus de Palha",
+            "Médico da tripulação dos Chapéus de Palha",
+            "Arqueóloga da tripulação dos Chapéus de Palha",
+            "Carpinteiro e construtor do Thousand Sunny (navio) dos Chapéus de Palha",
+            "Músico da tripulação dos Chapéus de Palha"
     };
 
     @Override
@@ -59,6 +70,7 @@ public class ListaActivity extends AppCompatActivity {
 
                 intent.putExtra("nomePersonagens", nomePersonagens[position]);
                 intent.putExtra("imgPersonagens", imgPersonagens[position]);
+                intent.putExtra("descPersonagens", descPersonagens[position]);
 
                 startActivity(intent);
             }
