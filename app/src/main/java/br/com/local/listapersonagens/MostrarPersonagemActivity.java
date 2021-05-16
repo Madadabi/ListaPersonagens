@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class MostrarPersonagemActivity extends AppCompatActivity {
     TextView txtPersonagens;
+    TextView descPersonagens;
     ImageView imgPersonagens;
 
     @Override
@@ -18,14 +19,17 @@ public class MostrarPersonagemActivity extends AppCompatActivity {
 
         txtPersonagens = findViewById(R.id.mtxtPersonagem);
         imgPersonagens = findViewById(R.id.mimgPersonagem);
+        descPersonagens = findViewById(R.id.mdescPersonagem);
 
         Intent intent = getIntent();
 
         String nPersonagem = intent.getStringExtra("nomePersonagens");
         int mPersonagem = intent.getIntExtra("imgPersonagens", 0);
+        String dPersonagem = intent.getStringExtra("descPersonagens");
 
         txtPersonagens.setText(nPersonagem);
         imgPersonagens.setImageResource(mPersonagem);
+        descPersonagens.setText(dPersonagem);
     }
 
 
