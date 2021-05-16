@@ -29,6 +29,16 @@
             android:textSize="30sp"
             android:id="@+id/mtxtPersonagem"/>
 
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="Capitão da tripulação dos Chapéu de Palha"
+            android:textColor="#666"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/mdescPersonagem"/>
+
     </LinearLayout>
 
 </LinearLayout>
