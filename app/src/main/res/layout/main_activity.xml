@@ -6,12 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver personagens de One Piece"
-        android:layout_centerInParent="true"
-        android:id="@+id/btnMain"
-        android:onClick="sendMessage"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="140dp"
+            android:src="@drawable/onepiecelogo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/blue_ocean_alpha">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mugiwara"
+                android:textColor="@color/white"
+                android:id="@+id/btnMugiwara"
+                android:onClick="openMugiwara"
+                style="?android:borderlessButtonStyle"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bigmom"
+                android:textColor="@color/white"
+                android:id="@+id/btnBigMom"
+                android:onClick="openBigMom"
+                style="?android:borderlessButtonStyle"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </RelativeLayout>
