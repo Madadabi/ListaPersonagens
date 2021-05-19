@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ListaPersonagens</string>
+    <string name="app_name">Wikia: One Piece</string>
+    <string name="mugiwara">Piratas dos Chapéus de Palha</string>
+    <string name="bigmom">Piratas da Big Mom</string>
+    <string name="luffy">Luffy</string>
+    <string name="desc_mugiwara">Capitão dos Piratas do Chapéu de Palha</string>
 </resources>
