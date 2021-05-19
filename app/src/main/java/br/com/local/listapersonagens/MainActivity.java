@@ -15,8 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_activity);
     }
 
-    public void sendMessage(View view) {
+    public void openMugiwara(View view) {
         Intent intent = new Intent(this, ListaActivity.class);
+        intent.putExtra("isClickedMugiwara", true);
+        startActivity(intent);
+    }
+
+    public void openBigMom(View view) {
+        Intent intent = new Intent(this, ListaActivity.class);
+        intent.putExtra("isClickedBigMom", true);
         startActivity(intent);
     }
 }
