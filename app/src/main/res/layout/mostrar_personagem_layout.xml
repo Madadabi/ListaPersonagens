@@ -11,8 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="150dp"
         android:gravity="center_horizontal"
+        android:layout_marginTop="150sp"
         android:orientation="vertical">
 
         <ImageView
@@ -20,24 +20,34 @@
             android:layout_height="200dp"
             android:id="@+id/mimgPersonagem"
             android:src="@drawable/luffy"/>
-        
-        <TextView
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Luffy"
-            android:textColor="#000"
-            android:textSize="30sp"
-            android:id="@+id/mtxtPersonagem"/>
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="15sp"
+            android:background="@color/blue_ocean_alpha">
 
-        <TextView
-            android:layout_width="200sp"
-            android:layout_height="wrap_content"
-            android:text="Capitão da tripulação dos Chapéu de Palha"
-            android:textColor="#666"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:id="@+id/mdescPersonagem"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/luffy"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:id="@+id/mtxtPersonagem"/>
+
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_mugiwara"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:id="@+id/mdescPersonagem"/>
+        </LinearLayout>
+
 
     </LinearLayout>
 
